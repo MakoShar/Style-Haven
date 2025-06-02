@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Haven| New Arrivals</title>
+    <link rel="icon" href="Images/fav_icon.png" type="image/png">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="Images/favicon.png">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#3b82f6", secondary: "#f59e0b" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Inter', sans-serif;
+      }
+      .hero-slide {
+      transition: opacity 0.5s ease;
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+      }
+      .custom-checkbox {
+      position: relative;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #d1d5db;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      }
+      .custom-checkbox.checked {
+      background-color: #3b82f6;
+      border-color: #3b82f6;
+      }
+      .custom-checkbox.checked::after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 2px;
+      width: 6px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      }
+      .rating-stars {
+      color: #f59e0b;
+      }
+      .countdown-timer {
+      font-variant-numeric: tabular-nums;
+      }
+      .product-card:hover .quick-view {
+      opacity: 1;
+      }
+      .product-card:hover .product-image {
+      transform: scale(1.05);
+      }
+      .product-image {
+      transition: transform 0.3s ease;
+      }
+      .quick-view {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      }
+      .category-card:hover .category-image {
+      transform: scale(1.05);
+      }
+      .category-image {
+      transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="index.html" class="text-3xl font-['Pacifico'] text-primary">
+            <img src="Images/fav_icon.png" alt="logo" class="w-10 h-10">
+            <span class="text-2xl font-bold">Style Haven</span>
+          </a>
+          <!-- Search Bar -->
+          <div class="relative w-full max-w-xl mx-4">
+            <input
+              type="text"
+              placeholder="Search for products..."
+              class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+            />
+            <div
+              class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-400"
+            >
+              <i class="ri-search-line"></i>
+            </div>
+          </div>
+          <!-- Navigation Icons -->
+          <div class="flex items-center space-x-6">
+            <a
+              href="#"
+              class="relative w-6 h-6 flex items-center justify-center text-gray-700 hover:text-primary"
+            >
+              <i class="ri-heart-line text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="relative w-6 h-6 flex items-center justify-center text-gray-700 hover:text-primary"
+            >
+              <i class="ri-user-line text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="relative w-6 h-6 flex items-center justify-center text-gray-700 hover:text-primary"
+            >
+              <i class="ri-shopping-cart-line text-xl"></i>
+              <span
+                class="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+                >3</span
+              >
+            </a>
+          </div>
+        </div>
+        <!-- Categories Menu -->
+        <nav
+          class="flex items-center justify-center py-3 border-t border-gray-100"
+        >
+          <ul class="flex space-x-8">
+            <li>
+              <a
+                href="women.html"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >Women</a
+              >
+            </li>
+            <li>
+              <a
+                href="men.html"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >Men</a
+              >
+            </li>
+            <li>
+              <a
+                href="kids.html"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >Kids</a
+              >
+            </li>
+            <li>
+              <a
+                href="accessories.html"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >Accessories</a
+              >
+            </li>
+            <li>
+              <a
+                href="beauty.html"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >Beauty</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html"
+                data-readdy="true"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >Home</a
+              >
+            </li>
+            
+            <li>
+              <a href="newarrival.html" class="text-sm font-medium text-primary"
+                >New Arrivals</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative h-[500px] overflow-hidden">
+      <div
+        class="hero-slide absolute inset-0 z-10 flex items-center"
+        style="background-image: url('https://readdy.ai/api/search-image?query=modern%20fashion%20photography%20with%20a%20stylish%20female%20model%20wearing%20elegant%20summer%20outfit%2C%20standing%20against%20a%20soft%20gradient%20background%2C%20high-end%20fashion%20photography%20with%20professional%20lighting%2C%20minimalist%20composition%20with%20soft%20shadows%2C%20commercial%20quality%2C%20professional%20fashion%20catalog%20style&width=1600&height=800&seq=1&orientation=landscape'); background-size: cover; background-position: center;"
+      >
+        <div class="container mx-auto px-4">
+          <div class="max-w-lg bg-white/90 p-8 rounded-lg backdrop-blur-sm">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">
+              Summer Collection 2025
+            </h1>
+            <p class="text-lg text-gray-700 mb-6">
+              Discover our latest arrivals with up to 30% off on selected items.
+              Limited time offer.
+            </p>
+            <div class="flex space-x-4">
+              
+              <a href="newarrival.html" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap">
+                Shop Now
+              </a>
+              <a href="beauty.html" class="border border-gray-300 text-gray-700 px-6 py-3 rounded-button font-medium hover:bg-gray-50 transition whitespace-nowrap inline-block">
+                View Lookbook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Categories -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <!-- Category 1 -->
+          <a href="women.html" class="category-card group">
+            <div class="rounded-lg overflow-hidden mb-3 aspect-square">
+              <div
+                class="category-image w-full h-full object-cover object-top"
+                style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20women%20fashion%20clothing%20on%20a%20minimalist%20white%20background%2C%20high-end%20fashion%20photography%2C%20professional%20lighting%2C%20soft%20shadows%2C%20commercial%20quality%2C%20fashion%20catalog%20style%2C%20isolated%20product&width=300&height=300&seq=2&orientation=squarish'); background-size: cover; background-position: center;"
+              ></div>
+            </div>
+            <h3
+              
+              class="text-center font-medium text-gray-800 group-hover:text-primary transition"
+            >
+              Women
+            </h3>
+          </a>
+          <!-- Category 2 -->
+          <a href="men.html" class="category-card group">
+            <div class="rounded-lg overflow-hidden mb-3 aspect-square">
+              <div
+                class="category-image w-full h-full object-cover object-top"
+                style="background-image: url('https://readdy.ai/api/search-image?query=stylish%20men%20fashion%20clothing%20on%20a%20minimalist%20white%20background%2C%20high-end%20fashion%20photography%2C%20professional%20lighting%2C%20soft%20shadows%2C%20commercial%20quality%2C%20fashion%20catalog%20style%2C%20isolated%20product&width=300&height=300&seq=3&orientation=squarish'); background-size: cover; background-position: center;"
+              ></div>
+            </div>
+            <h3
+              class="text-center font-medium text-gray-800 group-hover:text-primary transition"
+            >
+              Men
+            </h3>
+          </a>
+          <!-- Category 3 -->
+          <a href="kids.html" class="category-card group">
+            <div class="rounded-lg overflow-hidden mb-3 aspect-square">
+              <div
+                class="category-image w-full h-full object-cover object-top"
+                style="background-image: url('https://readdy.ai/api/search-image?query=cute%20kids%20fashion%20clothing%20on%20a%20minimalist%20white%20background%2C%20high-end%20fashion%20photography%2C%20professional%20lighting%2C%20soft%20shadows%2C%20commercial%20quality%2C%20fashion%20catalog%20style%2C%20isolated%20product&width=300&height=300&seq=4&orientation=squarish'); background-size: cover; background-position: center;"
+              ></div>
+            </div>
+            <h3
+              class="text-center font-medium text-gray-800 group-hover:text-primary transition"
+            >
+              Kids
+            </h3>
+          </a>
+          <!-- Category 4 -->
+          <a href="accessories.html" class="category-card group">
+            <div class="rounded-lg overflow-hidden mb-3 aspect-square">
+              <div
+                class="category-image w-full h-full object-cover object-top"
+                style="background-image: url('https://readdy.ai/api/search-image?query=luxury%20fashion%20accessories%20including%20bags%2C%20jewelry%2C%20and%20watches%20on%20a%20minimalist%20white%20background%2C%20high-end%20fashion%20photography%2C%20professional%20lighting%2C%20soft%20shadows%2C%20commercial%20quality%2C%20fashion%20catalog%20style%2C%20isolated%20product&width=300&height=300&seq=5&orientation=squarish'); background-size: cover; background-position: center;"
+              ></div>
+            </div>
+            <h3
+              class="text-center font-medium text-gray-800 group-hover:text-primary transition"
+            >
+              Accessories
+            </h3>
+          </a>
+          <!-- Category 5 -->
+          <a href="beauty.html" class="category-card group">
+            <div class="rounded-lg overflow-hidden mb-3 aspect-square">
+              <div
+                class="category-image w-full h-full object-cover object-top"
+                style="background-image: url('https://readdy.ai/api/search-image?query=premium%20beauty%20products%20and%20cosmetics%20on%20a%20minimalist%20white%20background%2C%20high-end%20product%20photography%2C%20professional%20lighting%2C%20soft%20shadows%2C%20commercial%20quality%2C%20beauty%20catalog%20style%2C%20isolated%20product&width=300&height=300&seq=6&orientation=squarish'); background-size: cover; background-position: center;"
+              ></div>
+            </div>
+            <h3
+              class="text-center font-medium text-gray-800 group-hover:text-primary transition"
+            >
+              Beauty
+            </h3>
+          </a>
+          <!-- Category 6 -->
+          <a href="index.html" class="category-card group">
+            <div class="rounded-lg overflow-hidden mb-3 aspect-square">
+              <div
+                class="category-image w-full h-full object-cover object-top"
+                style="background-image: url('https://readdy.ai/api/search-image?query=stylish%20home%20decor%20and%20lifestyle%20products%20on%20a%20minimalist%20white%20background%2C%20high-end%20product%20photography%2C%20professional%20lighting%2C%20soft%20shadows%2C%20commercial%20quality%2C%20home%20catalog%20style%2C%20isolated%20product&width=300&height=300&seq=7&orientation=squarish'); background-size: cover; background-position: center;"
+              ></div>
+            </div>
+            <h3
+              class="text-center font-medium text-gray-800 group-hover:text-primary transition"
+            >
+              Home
+            </h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Popular Products -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-10">
+          <h2 class="text-3xl font-bold">Popular Products</h2>
+          <div class="flex space-x-2">
+            <button
+              title="Previous products"
+              class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition"
+            >
+              <i class="ri-arrow-left-s-line text-xl"></i>
+            </button>
+            <button
+              title="Next products"
+              class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition"
+            >
+              <i class="ri-arrow-right-s-line text-xl"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
+          <!-- Product 1 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <div
+                class="product-image w-full h-full object-cover object-top"
+                style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20womens%20white%20summer%20dress%20on%20a%20minimalist%20light%20background%2C%20high-end%20fashion%20photography%2C%20professional%20lighting%2C%20soft%20shadows%2C%20commercial%20quality%2C%20fashion%20catalog%20style%2C%20isolated%20product&width=500&height=600&seq=8&orientation=portrait'); background-size: cover; background-position: center;"
+              ></div>
+              <div class="absolute top-3 left-3">
+                <span
+                  class="bg-primary text-white text-xs font-semibold px-2 py-1 rounded"
+                  >New</span
+                >
+              </div>
+              <div
+                class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+              >
+                <button
+                  class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                >
+                  Quick View
+                </button>
+              </div>
+              <button
+                title="Add to wishlist"
+                class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+              >
+                <i class="ri-heart-line"></i>
+              </button>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center mb-1">
+                <div class="rating-stars flex">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+                <span class="text-xs text-gray-500 ml-1">(42)</span>
+              </div>
+              <h3 class="font-medium text-gray-800 mb-1">Linen Summer Dress</h3>
+              <div class="flex justify-between items-center">
+                <div>
+                  <span class="font-semibold text-gray-900">$89.99</span>
+                </div>
+                <button
+                  title="Add to cart"
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                >
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <div
+                class="product-image w-full h-full object-cover object-top"
+                style="background-image: url('https://readdy.ai/api/search-image?query=stylish%20mens%20blue%20casual%20shirt%20on%20a%20minimalist%20light%20background%2C%20high-end%20fashion%20photography%2C%20professional%20lighting%2C%20soft%20shadows%2C%20commercial%20quality%2C%20fashion%20catalog%20style%2C%20isolated%20product&width=500&height=600&seq=9&orientation=portrait'); background-size: cover; background-position: center;"
+              ></div>
+              <div class="absolute top-3 left-3">
+                <span
+                  class="bg-secondary text-white text-xs font-semibold px-2 py-1 rounded"
+                  >-15%</span
+                >
+              </div>
+              <div
+                class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+              >
+                <button
+                  class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                >
+                  Quick View
+                </button>
+              </div>
+              <button
+                title="Add to wishlist"
+                class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+              >
+                <i class="ri-heart-line"></i>
+              </button>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center mb-1">
+                <div class="rating-stars flex">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-line"></i>
+                </div>
+                <span class="text-xs text-gray-500 ml-1">(28)</span>
+              </div>
+              <h3 class="font-medium text-gray-800 mb-1">
+                Classic Oxford Shirt
+              </h3>
+              <div class="flex justify-between items-center">
+                <div>
+                  <span class="font-semibold text-gray-900">$59.99</span>
+                  <span class="text-sm text-gray-500 line-through ml-2"
+                    >$69.99</span
+                  >
+                </div>
+                <button
+                  title="Add to cart"
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                >
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <div
+                class="product-image w-full h-full object-cover object-top"
+                style="background-image: url('https://readdy.ai/api/search-image?query=luxury%20leather%20handbag%20in%20brown%20color%20on%20a%20minimalist%20light%20background%2C%20high-end%20product%20photography%2C%20professional%20lighting%2C%20soft%20shadows%2C%20commercial%20quality%2C%20fashion%20catalog%20style%2C%20isolated%20product&width=500&height=600&seq=10&orientation=portrait'); background-size: cover; background-position: center;"
+              ></div>
+              <div
+                class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+              >
+                <button
+                  class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                >
+                  Quick View
+                </button>
+              </div>
+              <button
+                title="Add to wishlist"
+                class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-primary hover:bg-gray-100 transition"
+              >
+                <i class="ri-heart-fill"></i>
+              </button>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center mb-1">
+                <div class="rating-stars flex">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <span class="text-xs text-gray-500 ml-1">(56)</span>
+              </div>
+              <h3 class="font-medium text-gray-800 mb-1">Leather Tote Bag</h3>
+              <div class="flex justify-between items-center">
+                <div>
+                  <span class="font-semibold text-gray-900">$129.99</span>
+                </div>
+                <button
+                  title="Add to cart"
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                >
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <div
+                class="product-image w-full h-full object-cover object-top"
+                style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20gold%20and%20silver%20jewelry%20set%20with%20necklace%20and%20earrings%20on%20a%20minimalist%20light%20background%2C%20high-end%20product%20photography%2C%20professional%20lighting%2C%20soft%20shadows%2C%20commercial%20quality%2C%20jewelry%20catalog%20style%2C%20isolated%20product&width=500&height=600&seq=11&orientation=portrait'); background-size: cover; background-position: center;"
+              ></div>
+              <div class="absolute top-3 left-3">
+                <span
+                  class="bg-green-500 text-white text-xs font-semibold px-2 py-1 rounded"
+                  >Bestseller</span
+                >
+              </div>
+              <div
+                class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+              >
+                <button
+                  class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                >
+                  Quick View
+                </button>
+              </div>
+              <button
+                title="Add to wishlist"
+                class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+              >
+                <i class="ri-heart-line"></i>
+              </button>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center mb-1">
+                <div class="rating-stars flex">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+                <span class="text-xs text-gray-500 ml-1">(37)</span>
+              </div>
+              <h3 class="font-medium text-gray-800 mb-1">Pearl Necklace Set</h3>
+              <div class="flex justify-between items-center">
+                <div>
+                  <span class="font-semibold text-gray-900">$149.99</span>
+                </div>
+                <button
+                  title="Add to cart"
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                >
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <button
+            class="px-6 py-3 bg-white border border-gray-300 text-gray-700 font-medium rounded-full hover:bg-gray-50 transition !rounded-button whitespace-nowrap"
+          >
+            View All Products
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Special Offers Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Special Offers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Offer 1 -->
+          <div
+            class="rounded-lg overflow-hidden shadow-md relative"
+            style="background-image: url('https://readdy.ai/api/search-image?query=summer%20fashion%20sale%20promotional%20image%20with%20bright%20colors%2C%20modern%20typography%2C%20and%20stylish%20clothing%20items%2C%20high-end%20fashion%20photography%2C%20professional%20lighting%2C%20commercial%20quality%2C%20marketing%20campaign%20style&width=600&height=400&seq=12&orientation=landscape'); background-size: cover; background-position: center;"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+            ></div>
+            <div
+              class="relative p-6 h-full flex flex-col justify-end min-h-[300px]"
+            >
+              <div class="bg-white/90 p-5 rounded-lg backdrop-blur-sm">
+                <span class="text-primary font-semibold">Summer Sale</span>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                  Up to 40% Off
+                </h3>
+                <p class="text-gray-700 mb-4">
+                  On all summer essentials. Limited time offer.
+                </p>
+                <div class="flex space-x-3 mb-4 countdown-timer">
+                  <div class="bg-gray-100 rounded p-2 text-center w-16">
+                    <span class="block text-xl font-bold text-gray-900"
+                      >02</span
+                    >
+                    <span class="text-xs text-gray-500">Days</span>
+                  </div>
+                  <div class="bg-gray-100 rounded p-2 text-center w-16">
+                    <span class="block text-xl font-bold text-gray-900"
+                      >18</span
+                    >
+                    <span class="text-xs text-gray-500">Hours</span>
+                  </div>
+                  <div class="bg-gray-100 rounded p-2 text-center w-16">
+                    <span class="block text-xl font-bold text-gray-900"
+                      >45</span
+                    >
+                    <span class="text-xs text-gray-500">Mins</span>
+                  </div>
+                </div>
+                <button
+                  class="w-full bg-primary text-white py-2 font-medium !rounded-button whitespace-nowrap hover:bg-blue-600 transition"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Offer 2 -->
+          <div
+            class="rounded-lg overflow-hidden shadow-md relative"
+            style="background-image: url('https://readdy.ai/api/search-image?query=new%20arrivals%20fashion%20promotional%20image%20with%20elegant%20clothing%20and%20accessories%2C%20high-end%20fashion%20photography%2C%20professional%20lighting%2C%20commercial%20quality%2C%20marketing%20campaign%20style&width=600&height=400&seq=13&orientation=landscape'); background-size: cover; background-position: center;"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+            ></div>
+            <div
+              class="relative p-6 h-full flex flex-col justify-end min-h-[300px]"
+            >
+              <div class="bg-white/90 p-5 rounded-lg backdrop-blur-sm">
+                <span class="text-primary font-semibold">New Arrivals</span>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                  Spring Collection
+                </h3>
+                <p class="text-gray-700 mb-4">
+                  Discover our latest styles for the new season.
+                </p>
+                <div class="mb-4">
+                  <span
+                    class="bg-secondary text-white text-sm font-semibold px-3 py-1 rounded"
+                    >Use code: SPRING25</span
+                  >
+                </div>
+                <button
+                  class="w-full bg-primary text-white py-2 font-medium !rounded-button whitespace-nowrap hover:bg-blue-600 transition"
+                >
+                  Explore Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Offer 3 -->
+          <div
+            class="rounded-lg overflow-hidden shadow-md relative"
+            style="background-image: url('https://readdy.ai/api/search-image?query=exclusive%20membership%20promotional%20image%20with%20luxury%20fashion%20items%20and%20VIP%20elements%2C%20high-end%20fashion%20photography%2C%20professional%20lighting%2C%20commercial%20quality%2C%20marketing%20campaign%20style&width=600&height=400&seq=14&orientation=landscape'); background-size: cover; background-position: center;"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+            ></div>
+            <div
+              class="relative p-6 h-full flex flex-col justify-end min-h-[300px]"
+            >
+              <div class="bg-white/90 p-5 rounded-lg backdrop-blur-sm">
+                <span class="text-primary font-semibold">Exclusive Offer</span>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                  Join Our VIP Club
+                </h3>
+                <p class="text-gray-700 mb-4">
+                  Get early access to sales and exclusive offers.
+                </p>
+                <div class="mb-4">
+                  <span
+                    class="bg-gray-800 text-white text-sm font-semibold px-3 py-1 rounded"
+                    >10% Off First Order</span
+                  >
+                </div>
+                <button
+                  class="w-full bg-primary text-white py-2 font-medium !rounded-button whitespace-nowrap hover:bg-blue-600 transition"
+                >
+                  Sign Up Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter Subscription -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+          <p class="text-gray-600 mb-8">
+            Stay updated with the latest trends, new arrivals, and exclusive
+            offers. Get 10% off your first order when you subscribe.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="flex-grow px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+            />
+            <button
+              class="bg-primary text-white px-6 py-3 rounded-full font-medium !rounded-button whitespace-nowrap hover:bg-blue-600 transition"
+            >
+              Subscribe
+            </button>
+          </div>
+          <p class="text-xs text-gray-500 mt-4">
+            By subscribing, you agree to our
+            <a href="#" class="underline hover:text-primary">Privacy Policy</a>
+            and consent to receive marketing emails.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <a href="index.html" class="text-3xl font-['Pacifico'] text-white mb-6 block"
+              >Style Haven</a
+            >
+            <p class="text-gray-400 mb-6">
+              Your destination for premium fashion and beauty products. We
+              curate the best in clothing, accessories, and beauty essentials.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-pinterest-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">Shop</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="women.html" class="text-gray-400 hover:text-white transition"
+                  >Women</a
+                >
+              </li>
+              <li>
+                <a href="men.html" class="text-gray-400 hover:text-white transition"
+                  >Men</a
+                >
+              </li>
+              <li>
+                <a href="kids.html" class="text-gray-400 hover:text-white transition"
+                  >Kids</a
+                >
+              </li>
+              <li>
+                <a
+                  href="beauty.html"
+                  data-readdy="true"
+                  class="text-gray-400 hover:text-white transition"
+                  >Beauty</a
+                >
+              </li>
+              
+              
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">About</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Our Story</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Press</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Sustainability</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Affiliates</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">Customer Service</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Shipping & Returns</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Track Order</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2025 Fashion Store. All rights reserved.
+          </p>
+          <div class="flex items-center space-x-4">
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-visa-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-mastercard-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-paypal-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-apple-fill ri-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="backToTopScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const backToTopButton = document.getElementById("backToTop");
+        window.addEventListener("scroll", function () {
+          if (window.pageYOffset > 300) {
+            backToTopButton.classList.remove("opacity-0", "invisible");
+            backToTopButton.classList.add("opacity-100", "visible");
+          } else {
+            backToTopButton.classList.remove("opacity-100", "visible");
+            backToTopButton.classList.add("opacity-0", "invisible");
+          }
+        });
+        backToTopButton.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+    <script id="wishlistScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const wishlistButtons = document.querySelectorAll(
+          ".product-card button i.ri-heart-line, .product-card button i.ri-heart-fill",
+        );
+        wishlistButtons.forEach((button) => {
+          button.parentElement.addEventListener("click", function () {
+            if (button.classList.contains("ri-heart-line")) {
+              button.classList.remove("ri-heart-line");
+              button.classList.add("ri-heart-fill");
+              button.parentElement.classList.add("text-primary");
+            } else {
+              button.classList.remove("ri-heart-fill");
+              button.classList.add("ri-heart-line");
+              button.parentElement.classList.remove("text-primary");
+            }
+          });
+        });
+      });
+    </script>
+    <script id="countdownScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        // This would normally be connected to a real countdown
+        // For demo purposes, we're just updating the display
+        const updateCountdown = () => {
+          const countdownElements = document.querySelectorAll(".countdown-timer");
+          countdownElements.forEach((countdown) => {
+            const days = countdown.querySelector("div:nth-child(1) span:first-child");
+            const hours = countdown.querySelector(
+              "div:nth-child(2) span:first-child",
+            );
+            const minutes = countdown.querySelector(
+              "div:nth-child(3) span:first-child",
+            );
+            // Simulate countdown (would be replaced with actual calculation)
+            let mins = parseInt(minutes.textContent);
+            let hrs = parseInt(hours.textContent);
+            let dys = parseInt(days.textContent);
+            mins--;
+            if (mins < 0) {
+              mins = 59;
+              hrs--;
+              if (hrs < 0) {
+                hrs = 23;
+                dys--;
+                if (dys < 0) {
+                  dys = 0;
+                  hrs = 0;
+                  mins = 0;
+                }
+              }
+            }
+            days.textContent = dys.toString().padStart(2, "0");
+            hours.textContent = hrs.toString().padStart(2, "0");
+            minutes.textContent = mins.toString().padStart(2, "0");
+          });
+        };
+        // Update every minute (would be every second in a real implementation)
+        setInterval(updateCountdown, 60000);
+      });
+    </script>
+  </body>
+</html>

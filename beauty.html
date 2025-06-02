@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Products | Style Haven</title>
+    <link rel="icon" href="Images/fav_icon.png" type="image/png" />
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="Images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#4285F4", secondary: "#F5A623" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+      <a href="index.html" class="text-3xl font-['Pacifico'] text-primary">
+        <img src="Images/fav_icon.png" alt="logo" class="w-10 h-10">
+        <span class="text-2xl font-bold">Style Haven</span>
+      </a>
+
+        <div class="relative w-full max-w-md mx-4">
+          <input
+            type="text"
+            placeholder="Search for products..."
+            class="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-full text-sm focus:outline-none focus:border-primary"
+          />
+          <div
+            class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-400"
+          >
+            <i class="ri-search-line"></i>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <button
+            class="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-primary"
+            title="Add to wishlist"
+          >
+            <i class="ri-heart-line text-xl"></i>
+          </button>
+          <button
+            class="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-primary"
+            title="User account"
+          >
+            <i class="ri-user-line text-xl"></i>
+          </button>
+          <div class="relative">
+            <button
+              class="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-primary"
+              title="Shopping cart"
+            >
+              <i class="ri-shopping-bag-line text-xl"></i>
+            </button>
+            <span
+              class="absolute -top-1 -right-1 bg-primary text-white text-xs w-5 h-5 flex items-center justify-center rounded-full"
+              >0</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <nav class="border-t border-gray-100">
+        <div class="container mx-auto px-4">
+          <ul class="flex space-x-8">
+            <li>
+              <a href="women.html" class="block py-4 text-gray-600 hover:text-primary"
+                >Women</a
+              >
+            </li>
+            <li>
+              <a href="men.html" class="block py-4 text-gray-600 hover:text-primary"
+                >Men</a
+              >
+            </li>
+            <li>
+              <a href="kids.html" class="block py-4 text-gray-600 hover:text-primary"
+                >Kids</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="#"
+                class="block py-4 text-primary font-medium border-b-2 border-primary"
+                >Beauty</a
+              >
+            </li>
+            <li>
+              <a href="index.html" class="block py-4 text-gray-600 hover:text-primary"
+                >Home</a
+              >
+            </li>
+            
+            <li>
+              <a href="newarrival.html" class="block py-4 text-gray-600 hover:text-primary"
+                >New Arrivals</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-gray-50 overflow-hidden"
+      style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20beauty%20products%20arrangement%20with%20soft%20lighting%2C%20pastel%20colors%2C%20skincare%20bottles%2C%20makeup%20items%2C%20perfume%20bottles%2C%20and%20beauty%20accessories%20on%20a%20marble%20surface%20with%20soft%20shadows%20and%20reflections%2C%20professional%20product%20photography&width=1600&height=600&seq=1&orientation=landscape'); background-position: right center; background-size: cover; background-repeat: no-repeat;"
+    >
+      <div class="container mx-auto px-4 py-16 flex items-center min-h-[500px]">
+        <div class="bg-white/90 backdrop-blur-sm p-10 rounded-lg max-w-lg z-10">
+          <h1 class="text-4xl font-bold mb-4">Beauty Essentials</h1>
+          <p class="text-gray-600 mb-6">
+            Discover our premium collection of skincare, makeup, and fragrance
+            products. Up to 30% off on selected items. Limited time offer.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            
+            <a href="newarrival.html" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap">
+              Shop Now
+            </a>
+            <a href="beauty.html" class="border border-gray-300 text-gray-700 px-6 py-3 rounded-button font-medium hover:bg-gray-50 transition whitespace-nowrap inline-block">
+              View Lookbook
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Category 1 -->
+          <div
+            class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <div class="h-80 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20skincare%20products%20arrangement%20with%20cream%20jars%2C%20serums%2C%20and%20facial%20tools%20on%20a%20marble%20surface%20with%20soft%20lighting%20and%20minimalist%20aesthetic%2C%20professional%20product%20photography&width=600&height=800&seq=2&orientation=portrait"
+                alt="Skincare"
+                class="w-full h-full object-cover object-top transition group-hover:scale-105"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6"
+            >
+              <h3 class="text-xl font-bold text-white mb-2">Skincare</h3>
+              <p class="text-white/80 mb-4">
+                Cleansers, moisturizers, serums & more
+              </p>
+              <a href="#" class="text-white flex items-center font-medium">
+                Shop Collection
+                <i class="ri-arrow-right-line ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div
+            class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <div class="h-80 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20makeup%20products%20arrangement%20with%20lipsticks%2C%20eyeshadow%20palettes%2C%20foundation%20bottles%2C%20and%20makeup%20brushes%20on%20a%20light%20background%20with%20soft%20shadows%2C%20professional%20product%20photography&width=600&height=800&seq=3&orientation=portrait"
+                alt="Makeup"
+                class="w-full h-full object-cover object-top transition group-hover:scale-105"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6"
+            >
+              <h3 class="text-xl font-bold text-white mb-2">Makeup</h3>
+              <p class="text-white/80 mb-4">
+                Foundation, lipstick, eyeshadow & more
+              </p>
+              <a href="#" class="text-white flex items-center font-medium">
+                Shop Collection
+                <i class="ri-arrow-right-line ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div
+            class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <div class="h-80 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20hair%20care%20products%20arrangement%20with%20shampoo%20bottles%2C%20conditioners%2C%20hair%20masks%2C%20and%20styling%20tools%20on%20a%20light%20background%20with%20soft%20lighting%2C%20professional%20product%20photography&width=600&height=800&seq=4&orientation=portrait"
+                alt="Hair Care"
+                class="w-full h-full object-cover object-top transition group-hover:scale-105"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6"
+            >
+              <h3 class="text-xl font-bold text-white mb-2">Hair Care</h3>
+              <p class="text-white/80 mb-4">
+                Shampoo, conditioner, treatments & more
+              </p>
+              <a href="#" class="text-white flex items-center font-medium">
+                Shop Collection
+                <i class="ri-arrow-right-line ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div
+            class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <div class="h-80 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20fragrance%20bottles%20and%20perfumes%20arrangement%20on%20a%20light%20background%20with%20soft%20lighting%20and%20reflections%2C%20luxury%20perfume%20bottles%20with%20minimalist%20aesthetic%2C%20professional%20product%20photography&width=600&height=800&seq=5&orientation=portrait"
+                alt="Fragrance"
+                class="w-full h-full object-cover object-top transition group-hover:scale-105"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6"
+            >
+              <h3 class="text-xl font-bold text-white mb-2">Fragrance</h3>
+              <p class="text-white/80 mb-4">
+                Perfume, cologne, body mists & more
+              </p>
+              <a href="#" class="text-white flex items-center font-medium">
+                Shop Collection
+                <i class="ri-arrow-right-line ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-10">
+          <h2 class="text-3xl font-bold">Bestsellers</h2>
+          <a href="#" class="text-primary flex items-center font-medium">
+            View All
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Product 1 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20skincare%20serum%20bottle%20with%20dropper%20on%20a%20light%20background%20with%20soft%20shadows%2C%20professional%20product%20photography%20with%20minimalist%20aesthetic&width=500&height=500&seq=6&orientation=squarish"
+                alt="Hydrating Serum"
+                class="w-full h-full object-cover object-top transition group-hover:scale-105"
+              />
+              <div class="absolute top-3 right-3 flex flex-col gap-2">
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md text-gray-500 hover:text-primary transition"
+                  title="Add to wishlist"
+                >
+                  <i class="ri-heart-line"></i>
+                </button>
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md text-gray-500 hover:text-primary transition"
+                  title="Quick view"
+                >
+                  <i class="ri-eye-line"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center text-yellow-400 mb-2">
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-half-fill text-xs"></i>
+                <span class="text-gray-500 text-xs ml-1">(128)</span>
+              </div>
+              <h3 class="font-medium mb-1">Hydrating Facial Serum</h3>
+              <p class="text-gray-500 text-sm mb-3">
+                Hyaluronic Acid & Vitamin C
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <span class="text-primary font-bold">$42.00</span>
+                  <span class="text-gray-400 line-through text-sm ml-2"
+                    >$55.00</span
+                  >
+                </div>
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full hover:bg-primary/90 transition"
+                  title="Add to cart"
+                >
+                  <i class="ri-add-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20foundation%20bottle%20with%20pump%20on%20a%20light%20background%20with%20soft%20shadows%2C%20professional%20makeup%20product%20photography%20with%20minimalist%20aesthetic&width=500&height=500&seq=7&orientation=squarish"
+                alt="Foundation"
+                class="w-full h-full object-cover object-top transition group-hover:scale-105"
+              />
+              <div class="absolute top-3 right-3 flex flex-col gap-2">
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md text-gray-500 hover:text-primary transition"
+                  title="Add to wishlist"
+                >
+                  <i class="ri-heart-line"></i>
+                </button>
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md text-gray-500 hover:text-primary transition"
+                  title="Quick view"
+                >
+                  <i class="ri-eye-line"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center text-yellow-400 mb-2">
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <span class="text-gray-500 text-xs ml-1">(94)</span>
+              </div>
+              <h3 class="font-medium mb-1">Luminous Matte Foundation</h3>
+              <p class="text-gray-500 text-sm mb-3">Long-lasting, 24 shades</p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <span class="text-primary font-bold">$38.00</span>
+                </div>
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full hover:bg-primary/90 transition"
+                  title="Add to cart"
+                >
+                  <i class="ri-add-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20perfume%20bottle%20on%20a%20light%20background%20with%20soft%20shadows%2C%20luxury%20fragrance%20product%20photography%20with%20minimalist%20aesthetic&width=500&height=500&seq=8&orientation=squarish"
+                alt="Perfume"
+                class="w-full h-full object-cover object-top transition group-hover:scale-105"
+              />
+              <div class="absolute top-3 right-3 flex flex-col gap-2">
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md text-gray-500 hover:text-primary transition"
+                  title="Add to wishlist"
+                >
+                  <i class="ri-heart-line"></i>
+                </button>
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md text-gray-500 hover:text-primary transition"
+                  title="Quick view"
+                >
+                  <i class="ri-eye-line"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center text-yellow-400 mb-2">
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-line text-xs"></i>
+                <span class="text-gray-500 text-xs ml-1">(76)</span>
+              </div>
+              <h3 class="font-medium mb-1">Signature Eau de Parfum</h3>
+              <p class="text-gray-500 text-sm mb-3">
+                Floral & Woody Notes, 50ml
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <span class="text-primary font-bold">$85.00</span>
+                  <span class="text-gray-400 line-through text-sm ml-2"
+                    >$110.00</span
+                  >
+                </div>
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full hover:bg-primary/90 transition"
+                  title="Add to cart"
+                >
+                  <i class="ri-add-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20lipstick%20tube%20on%20a%20light%20background%20with%20soft%20shadows%2C%20luxury%20makeup%20product%20photography%20with%20minimalist%20aesthetic&width=500&height=500&seq=9&orientation=squarish"
+                alt="Lipstick"
+                class="w-full h-full object-cover object-top transition group-hover:scale-105"
+              />
+              <div class="absolute top-3 right-3 flex flex-col gap-2">
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md text-gray-500 hover:text-primary transition"
+                  title="Add to wishlist"
+                >
+                  <i class="ri-heart-line"></i>
+                </button>
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md text-gray-500 hover:text-primary transition"
+                  title="Quick view"
+                >
+                  <i class="ri-eye-line"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center text-yellow-400 mb-2">
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-fill text-xs"></i>
+                <i class="ri-star-half-fill text-xs"></i>
+                <span class="text-gray-500 text-xs ml-1">(112)</span>
+              </div>
+              <h3 class="font-medium mb-1">Creamy Matte Lipstick</h3>
+              <p class="text-gray-500 text-sm mb-3">Long-lasting, 18 shades</p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <span class="text-primary font-bold">$24.00</span>
+                </div>
+                <button
+                  class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full hover:bg-primary/90 transition"
+                  title="Add to cart"
+                >
+                  <i class="ri-add-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div class="order-2 lg:order-1">
+            <span class="text-primary font-medium mb-2 block"
+              >Featured Collection</span
+            >
+            <h2 class="text-3xl font-bold mb-4">Clean Beauty Essentials</h2>
+            <p class="text-gray-600 mb-6">
+              Discover our collection of clean, non-toxic beauty products made
+              with natural ingredients. Perfect for sensitive skin and
+              environmentally conscious consumers.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Paraben-free and sulfate-free formulations</span>
+              </li>
+              <li class="flex items-center">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Cruelty-free and vegan-friendly options</span>
+              </li>
+              <li class="flex items-center">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Sustainable packaging and ethical sourcing</span>
+              </li>
+              <li class="flex items-center">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Dermatologist-tested for all skin types</span>
+              </li>
+            </ul>
+            <button
+              class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap"
+            >
+              Explore Collection
+            </button>
+          </div>
+          <div class="order-1 lg:order-2">
+            <img
+              src="https://readdy.ai/api/search-image?query=elegant%20arrangement%20of%20clean%20beauty%20products%20with%20natural%20ingredients%2C%20skincare%20bottles%2C%20and%20beauty%20tools%20on%20a%20light%20background%20with%20plants%20and%20natural%20elements%2C%20professional%20product%20photography%20with%20minimalist%20aesthetic&width=800&height=600&seq=10&orientation=landscape"
+              alt="Clean Beauty Collection"
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Now -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-10">
+          <h2 class="text-3xl font-bold">Trending Now</h2>
+          <a href="#" class="text-primary flex items-center font-medium">
+            View All
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Trend 1 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative h-72 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20skincare%20routine%20with%20multiple%20products%20arranged%20on%20a%20bathroom%20counter%2C%20showing%20morning%20skincare%20routine%20steps%2C%20professional%20lifestyle%20photography%20with%20soft%20lighting&width=600&height=500&seq=11&orientation=landscape"
+                alt="Skincare Routine"
+                class="w-full h-full object-cover object-top transition group-hover:scale-105"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">10-Step Korean Skincare</h3>
+              <p class="text-gray-600 mb-4">
+                Discover the transformative power of the famous Korean skincare
+                routine with our curated product selection.
+              </p>
+              <a href="#" class="text-primary flex items-center font-medium">
+                Learn More
+                <i class="ri-arrow-right-line ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Trend 2 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative h-72 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20makeup%20brushes%20and%20tools%20arranged%20on%20a%20vanity%20with%20soft%20lighting%2C%20professional%20beauty%20product%20photography%20with%20minimalist%20aesthetic&width=600&height=500&seq=12&orientation=landscape"
+                alt="Makeup Tools"
+                class="w-full h-full object-cover object-top transition group-hover:scale-105"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Professional Makeup Tools</h3>
+              <p class="text-gray-600 mb-4">
+                Elevate your makeup application with our selection of
+                professional-grade brushes and tools.
+              </p>
+              <a href="#" class="text-primary flex items-center font-medium">
+                Learn More
+                <i class="ri-arrow-right-line ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Trend 3 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative h-72 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20natural%20ingredients%20for%20skincare%20like%20aloe%20vera%2C%20cucumber%2C%20and%20botanical%20extracts%20on%20a%20light%20background%2C%20professional%20product%20photography%20with%20minimalist%20aesthetic&width=600&height=500&seq=13&orientation=landscape"
+                alt="Natural Ingredients"
+                class="w-full h-full object-cover object-top transition group-hover:scale-105"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Natural Ingredient Focus</h3>
+              <p class="text-gray-600 mb-4">
+                Explore our collection of products featuring powerful natural
+                ingredients like niacinamide, hyaluronic acid, and vitamin C.
+              </p>
+              <a href="#" class="text-primary flex items-center font-medium">
+                Learn More
+                <i class="ri-arrow-right-line ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-primary/5">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-4">Join Our Beauty Community</h2>
+          <p class="text-gray-600 mb-8">
+            Subscribe to our newsletter for exclusive offers, beauty tips, and
+            new product announcements. Get 15% off your first order when you
+            sign up.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="flex-1 px-4 py-3 border border-gray-200 rounded-button focus:outline-none focus:border-primary"
+            />
+            <button
+              class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Featured Brands</h2>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8"
+        >
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center text-gray-500 mb-2"
+            >
+              <i class="ri-vip-crown-fill ri-2x"></i>
+            </div>
+            <span class="text-sm font-medium">Luxury Beauty</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center text-gray-500 mb-2"
+            >
+              <i class="ri-leaf-fill ri-2x"></i>
+            </div>
+            <span class="text-sm font-medium">Natural Glow</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center text-gray-500 mb-2"
+            >
+              <i class="ri-drop-fill ri-2x"></i>
+            </div>
+            <span class="text-sm font-medium">Pure Essence</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center text-gray-500 mb-2"
+            >
+              <i class="ri-sun-fill ri-2x"></i>
+            </div>
+            <span class="text-sm font-medium">Radiance</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center text-gray-500 mb-2"
+            >
+              <i class="ri-flower-fill ri-2x"></i>
+            </div>
+            <span class="text-sm font-medium">Botanical</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center text-gray-500 mb-2"
+            >
+              <i class="ri-sparkling-fill ri-2x"></i>
+            </div>
+            <span class="text-sm font-medium">Glow Factor</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <a href="index.html" class="text-3xl font-['Pacifico'] text-white mb-6 block"
+              >Style Haven</a
+            >
+            <p class="text-gray-400 mb-6">
+              Your destination for premium fashion and beauty products. We
+              curate the best in clothing, accessories, and beauty essentials.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-pinterest-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">Shop</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="women.html" class="text-gray-400 hover:text-white transition"
+                  >Women</a
+                >
+              </li>
+              <li>
+                <a href="men.html" class="text-gray-400 hover:text-white transition"
+                  >Men</a
+                >
+              </li>
+              <li>
+                <a href="kids.html" class="text-gray-400 hover:text-white transition"
+                  >Kids</a
+                >
+              </li>
+              <li>
+                <a
+                  href="beauty.html"
+                  data-readdy="true"
+                  class="text-gray-400 hover:text-white transition"
+                  >Beauty</a
+                >
+              </li>
+              
+              
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">About</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Our Story</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Press</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Sustainability</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Affiliates</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">Customer Service</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Shipping & Returns</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Track Order</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2025 Fashion Store. All rights reserved.
+          </p>
+          <div class="flex items-center space-x-4">
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-visa-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-mastercard-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-paypal-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-apple-fill ri-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script id="navigation-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.querySelector(
+          'input[placeholder="Search for products..."]',
+        );
+
+        searchInput.addEventListener("focus", function () {
+          this.classList.add("border-primary");
+        });
+
+        searchInput.addEventListener("blur", function () {
+          this.classList.remove("border-primary");
+        });
+      });
+    </script>
+
+    <script id="product-interaction">
+      document.addEventListener("DOMContentLoaded", function () {
+        const addToCartButtons = document.querySelectorAll(
+          ".bg-primary.rounded-full",
+        );
+
+        addToCartButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const productName =
+              this.closest(".bg-white").querySelector("h3").textContent;
+
+            // Show a brief notification
+            const notification = document.createElement("div");
+            notification.className =
+              "fixed bottom-4 right-4 bg-primary text-white py-2 px-4 rounded-lg shadow-lg z-50 transition-opacity duration-300";
+            notification.textContent = `${productName} added to cart`;
+            document.body.appendChild(notification);
+
+            // Remove notification after 3 seconds
+            setTimeout(() => {
+              notification.style.opacity = "0";
+              setTimeout(() => {
+                document.body.removeChild(notification);
+              }, 300);
+            }, 3000);
+
+            // Update cart count
+            const cartCount = document.querySelector(".absolute.-top-1.-right-1");
+            const currentCount = parseInt(cartCount.textContent);
+            cartCount.textContent = currentCount + 1;
+          });
+        });
+
+        // Wishlist toggle
+        const wishlistButtons = document.querySelectorAll(".ri-heart-line");
+
+        wishlistButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            if (this.className.includes("ri-heart-line")) {
+              this.className = this.className.replace(
+                "ri-heart-line",
+                "ri-heart-fill text-primary",
+              );
+            } else {
+              this.className = this.className.replace(
+                "ri-heart-fill text-primary",
+                "ri-heart-line",
+              );
+            }
+          });
+        });
+      });
+    </script>
+
+    <script id="newsletter-subscription">
+      document.addEventListener("DOMContentLoaded", function () {
+        const emailInput = document.querySelector('input[type="email"]');
+        const subscribeButton = emailInput.nextElementSibling;
+
+        subscribeButton.addEventListener("click", function () {
+          const email = emailInput.value.trim();
+
+          if (email === "") {
+            // Show error
+            emailInput.classList.add("border-red-500");
+
+            // Create error message if it doesn't exist
+            if (!document.querySelector(".email-error")) {
+              const errorMsg = document.createElement("p");
+              errorMsg.className = "text-red-500 text-sm mt-1 email-error";
+              errorMsg.textContent = "Please enter your email address";
+              emailInput.parentNode.appendChild(errorMsg);
+            }
+          } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+            // Show error for invalid email
+            emailInput.classList.add("border-red-500");
+
+            // Create error message if it doesn't exist
+            if (!document.querySelector(".email-error")) {
+              const errorMsg = document.createElement("p");
+              errorMsg.className = "text-red-500 text-sm mt-1 email-error";
+              errorMsg.textContent = "Please enter a valid email address";
+              emailInput.parentNode.appendChild(errorMsg);
+            } else {
+              document.querySelector(".email-error").textContent =
+                "Please enter a valid email address";
+            }
+          } else {
+            // Success
+            emailInput.classList.remove("border-red-500");
+            emailInput.classList.add("border-green-500");
+
+            // Remove error message if it exists
+            const errorMsg = document.querySelector(".email-error");
+            if (errorMsg) {
+              errorMsg.remove();
+            }
+
+            // Show success message
+            const successMsg = document.createElement("p");
+            successMsg.className = "text-green-500 text-sm mt-1";
+            successMsg.textContent = "Thank you for subscribing!";
+            emailInput.parentNode.appendChild(successMsg);
+
+            // Clear input
+            emailInput.value = "";
+
+            // Remove success message after 3 seconds
+            setTimeout(() => {
+              successMsg.remove();
+              emailInput.classList.remove("border-green-500");
+            }, 3000);
+          }
+        });
+
+        // Clear error on input
+        emailInput.addEventListener("input", function () {
+          this.classList.remove("border-red-500");
+          const errorMsg = document.querySelector(".email-error");
+          if (errorMsg) {
+            errorMsg.remove();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

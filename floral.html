@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floral Summer Dress | Style Haven</title>
+    <link rel="icon" href="Images/fav_icon.png" type="image/png" />
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="Images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#4285F4", secondary: "#F5A623" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-white text-gray-800">
+    <!-- Header -->
+    <header class="border-b border-gray-200">
+      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="text-3xl font-['Pacifico'] text-primary">
+          <img src="Images/fav_icon.png" alt="logo" class="w-10 h-10">
+          <span class="text-2xl font-bold">Style Haven</span>
+        </a>
+        <div class="relative w-full max-w-xl mx-8">
+          <input
+            type="text"
+            placeholder="Search for products..."
+            class="w-full py-2 pl-10 pr-4 rounded-full border border-gray-300 focus:outline-none focus:border-primary text-sm"
+          />
+          <div class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-400">
+            <i class="ri-search-line"></i>
+          </div>
+        </div>
+        <div class="flex items-center space-x-6">
+          <a href="#" class="w-6 h-6 flex items-center justify-center text-gray-600 hover:text-primary">
+            <i class="ri-heart-line ri-lg"></i>
+          </a>
+          <a href="#" class="w-6 h-6 flex items-center justify-center text-gray-600 hover:text-primary">
+            <i class="ri-user-line ri-lg"></i>
+          </a>
+          <a href="#" class="relative w-6 h-6 flex items-center justify-center text-gray-600 hover:text-primary">
+            <i class="ri-shopping-bag-line ri-lg"></i>
+            <span class="absolute -top-1 -right-1 w-4 h-4 bg-primary text-white text-xs rounded-full flex items-center justify-center">3</span>
+          </a>
+        </div>
+      </div>
+      <nav class="container mx-auto px-4 py-3">
+        <ul class="flex space-x-8 justify-center text-sm">
+          <li><a href="women.html" class="py-2 hover:text-primary">Women</a></li>
+          <li><a href="men.html" class="py-2 hover:text-primary">Men</a></li>
+          <li><a href="kids.html" class="py-2 hover:text-primary">Kids</a></li>
+          <li><a href="accessories.html" class="py-2 hover:text-primary">Accessories</a></li>
+          <li><a href="beauty.html" class="py-2 hover:text-primary">Beauty</a></li>
+          <li><a href="index.html" class="py-2 hover:text-primary">Home</a></li>
+          <li><a href="newarrival.html" class="py-2 hover:text-primary">New Arrivals</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="bg-gray-50 py-4">
+      <div class="container mx-auto px-4">
+        <nav class="flex items-center space-x-2 text-sm">
+          <a href="index.html" class="text-gray-500 hover:text-primary transition">Home</a>
+          <i class="ri-arrow-right-s-line text-gray-400"></i>
+          <a href="women.html" class="text-gray-500 hover:text-primary transition">Women</a>
+          <i class="ri-arrow-right-s-line text-gray-400"></i>
+          <a href="women.html#dresses" class="text-gray-500 hover:text-primary transition">Summer Dresses</a>
+          <i class="ri-arrow-right-s-line text-gray-400"></i>
+          <span class="text-gray-800">Floral Summer Dress</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Product Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Product Images -->
+          <div class="space-y-4">
+            <div class="relative rounded-lg overflow-hidden">
+              <img
+                id="mainImage"
+                src="Images/floral_dress_cover_photo.png"
+                alt="Floral Summer Dress"
+                class="w-full h-[600px] object-cover transition-opacity duration-300"
+              />
+              <div class="absolute top-4 left-4 bg-primary text-white text-sm px-3 py-1 rounded-full">
+                NEW
+              </div>
+            </div>
+            <div class="grid grid-cols-4 gap-4">
+              <div class="rounded-lg overflow-hidden cursor-pointer border-2 border-primary" onclick="changeImage('Images/floral_dress_front_view.png', this)">
+                <img
+                  src="Images/floral_dress_front_view.png"
+                  alt="Floral Summer Dress - Front View"
+                  class="w-full h-24 object-cover"
+                />
+              </div>
+              <div class="rounded-lg overflow-hidden cursor-pointer hover:border-2 hover:border-primary" onclick="changeImage('Images/floral_dress_on_woman_back_view.png', this)">
+                <img
+                  src="Images/floral_dress_on_woman_back_view.png"
+                  alt="Floral Summer Dress - Back View"
+                  class="w-full h-24 object-cover"
+                />
+              </div>
+              <div class="rounded-lg overflow-hidden cursor-pointer hover:border-2 hover:border-primary" onclick="changeImage('Images/floral_dress_on_woman_side_view.png', this)">
+                <img
+                  src="Images/floral_dress_on_woman_side_view.png"
+                  alt="Floral Summer Dress - Side View"
+                  class="w-full h-24 object-cover"
+                />
+              </div>
+              <div class="rounded-lg overflow-hidden cursor-pointer hover:border-2 hover:border-primary" onclick="changeImage('Images/floral_dress_on_woman_front_view.png', this)">
+                <img
+                  src="Images/floral_dress_on_woman_front_view.png"
+                  alt="Floral Summer Dress - Model View"
+                  class="w-full h-24 object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Details -->
+          <div class="space-y-6">
+            <div>
+              <h1 class="text-3xl font-bold mb-2">Floral Summer Dress</h1>
+              <div class="flex items-center text-yellow-400 mb-2">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+                <span class="text-gray-500 text-sm ml-2">(42 reviews)</span>
+              </div>
+              <p class="text-2xl font-bold text-primary">$59.99</p>
+            </div>
+
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-medium mb-2">Description</h3>
+                <p class="text-gray-600">
+                  A beautiful floral summer dress perfect for warm days. Made from lightweight, breathable fabric with a flattering silhouette. Features a v-neckline, short sleeves, and a flowy skirt. The delicate floral pattern adds a touch of elegance to your summer wardrobe.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-medium mb-2">Features</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                  <li>Lightweight and breathable fabric</li>
+                  <li>V-neckline with short sleeves</li>
+                  <li>Floaty A-line silhouette</li>
+                  <li>Side pockets</li>
+                  <li>Machine washable</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-medium mb-2">Size</h3>
+                <div class="flex space-x-2">
+                  <button class="w-12 h-12 border border-gray-300 rounded-lg hover:border-primary focus:border-primary focus:outline-none">XS</button>
+                  <button class="w-12 h-12 border border-gray-300 rounded-lg hover:border-primary focus:border-primary focus:outline-none">S</button>
+                  <button class="w-12 h-12 border border-gray-300 rounded-lg hover:border-primary focus:border-primary focus:outline-none">M</button>
+                  <button class="w-12 h-12 border border-gray-300 rounded-lg hover:border-primary focus:border-primary focus:outline-none">L</button>
+                  <button class="w-12 h-12 border border-gray-300 rounded-lg hover:border-primary focus:border-primary focus:outline-none">XL</button>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="font-medium mb-2">Quantity</h3>
+                <div class="flex items-center space-x-4">
+                  <div class="flex items-center border border-gray-300 rounded-lg">
+                    <button class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary" aria-label="Decrease quantity">-</button>
+                    <input 
+                      type="number" 
+                      value="1" 
+                      min="1" 
+                      class="w-16 text-center border-x border-gray-300 py-2 focus:outline-none" 
+                      aria-label="Quantity"
+                      title="Product quantity"
+                    />
+                    <button class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary" aria-label="Increase quantity">+</button>
+                  </div>
+                  <span class="text-sm text-gray-500">Available: 15 items</span>
+                </div>
+              </div>
+
+              <div class="flex space-x-4">
+                <button class="flex-1 bg-primary text-white py-3 rounded-button font-medium hover:bg-primary/90 transition">
+                  Add to Cart
+                </button>
+                <button class="w-12 h-12 flex items-center justify-center border border-gray-300 rounded-lg text-gray-600 hover:text-primary hover:border-primary transition" aria-label="Add to wishlist">
+                  <i class="ri-heart-line text-xl"></i>
+                </button>
+              </div>
+
+              <div class="pt-6 border-t border-gray-200">
+                <div class="flex items-center text-sm text-gray-500 space-x-4">
+                  <div class="flex items-center">
+                    <i class="ri-truck-line mr-2"></i>
+                    Free Shipping
+                  </div>
+                  <div class="flex items-center">
+                    <i class="ri-arrow-return-left-line mr-2"></i>
+                    Easy Returns
+                  </div>
+                  <div class="flex items-center">
+                    <i class="ri-shield-check-line mr-2"></i>
+                    2 Year Warranty
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <a href="index.html" class="text-3xl font-['Pacifico'] text-white mb-6 block">Style Haven</a>
+            <p class="text-gray-400 mb-6">
+              Your destination for premium fashion and beauty products. We curate the best in clothing, accessories, and beauty essentials.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition">
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition">
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition">
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition">
+                <i class="ri-pinterest-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">Shop</h3>
+            <ul class="space-y-3">
+              <li><a href="women.html" class="text-gray-400 hover:text-white transition">Women</a></li>
+              <li><a href="men.html" class="text-gray-400 hover:text-white transition">Men</a></li>
+              <li><a href="kids.html" class="text-gray-400 hover:text-white transition">Kids</a></li>
+              <li><a href="beauty.html" class="text-gray-400 hover:text-white transition">Beauty</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">About</h3>
+            <ul class="space-y-3">
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Our Story</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Press</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Sustainability</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Affiliates</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">Customer Service</h3>
+            <ul class="space-y-3">
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">FAQs</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping & Returns</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Track Order</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2025 Fashion Store. All rights reserved.
+          </p>
+          <div class="flex items-center space-x-4">
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-visa-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-mastercard-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-paypal-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-apple-fill ri-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Quantity input handling
+        const quantityInput = document.querySelector('input[type="number"]');
+        const minusButton = quantityInput.previousElementSibling;
+        const plusButton = quantityInput.nextElementSibling;
+
+        minusButton.addEventListener("click", function () {
+          const currentValue = parseInt(quantityInput.value);
+          if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+          }
+        });
+
+        plusButton.addEventListener("click", function () {
+          const currentValue = parseInt(quantityInput.value);
+          if (currentValue < 15) {
+            quantityInput.value = currentValue + 1;
+          }
+        });
+
+        // Size selection
+        const sizeButtons = document.querySelectorAll('.w-12.h-12');
+        sizeButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            sizeButtons.forEach(btn => btn.classList.remove('border-primary'));
+            this.classList.add('border-primary');
+          });
+        });
+
+        // Add to cart functionality
+        const addToCartButton = document.querySelector('.bg-primary');
+        addToCartButton.addEventListener('click', function() {
+          const notification = document.createElement('div');
+          notification.className = 'fixed bottom-4 right-4 bg-primary text-white py-2 px-4 rounded-lg shadow-lg z-50 transition-opacity duration-300';
+          notification.textContent = 'Floral Summer Dress added to cart';
+          document.body.appendChild(notification);
+
+          setTimeout(() => {
+            notification.style.opacity = '0';
+            setTimeout(() => {
+              document.body.removeChild(notification);
+            }, 300);
+          }, 3000);
+
+          const cartCount = document.querySelector('.absolute.-top-1.-right-1');
+          const currentCount = parseInt(cartCount.textContent);
+          cartCount.textContent = currentCount + 1;
+        });
+      });
+
+      // Image gallery functionality
+      function changeImage(src, clickedThumbnail) {
+        const mainImage = document.getElementById('mainImage');
+        const thumbnails = document.querySelectorAll('.grid-cols-4 > div');
+        
+        // Fade out current image
+        mainImage.style.opacity = '0';
+        
+        // Update image source and fade in
+        setTimeout(() => {
+          mainImage.src = src;
+          mainImage.style.opacity = '1';
+        }, 300);
+
+        // Update thumbnail borders
+        thumbnails.forEach(thumb => {
+          thumb.classList.remove('border-primary');
+          thumb.classList.add('hover:border-primary');
+        });
+        
+        // Add border to clicked thumbnail
+        clickedThumbnail.classList.remove('hover:border-primary');
+        clickedThumbnail.classList.add('border-primary');
+      }
+    </script>
+  </body>
+</html>

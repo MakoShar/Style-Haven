@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Haven| Women</title>
+    <link rel="icon" href="Images/fav_icon.png" type="image/png" />
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="Images/favicon.png" />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#3b82f6", secondary: "#f59e0b" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Inter', sans-serif;
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+      .custom-checkbox {
+          position: relative;
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          border: 2px solid #d1d5db;
+          border-radius: 4px;
+          transition: all 0.2s ease;
+      }
+      .custom-checkbox.checked {
+          background-color: #3b82f6;
+          border-color: #3b82f6;
+      }
+      .custom-checkbox.checked::after {
+          content: '';
+          position: absolute;
+          left: 5px;
+          top: 2px;
+          width: 6px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+      }
+      .rating-stars {
+          color: #f59e0b;
+      }
+      .product-card:hover .quick-view {
+          opacity: 1;
+      }
+      .product-card:hover .product-image {
+          transform: scale(1.05);
+      }
+      .product-image {
+          transition: transform 0.3s ease;
+      }
+      .quick-view {
+          opacity: 0;
+          transition: opacity 0.3s ease;
+      }
+      .price-slider {
+          -webkit-appearance: none;
+          width: 100%;
+          height: 4px;
+          background: #e5e7eb;
+          border-radius: 5px;
+          outline: none;
+      }
+      .price-slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: #3b82f6;
+          cursor: pointer;
+          border: 2px solid white;
+          box-shadow: 0 0 0 1px #3b82f6;
+      }
+      .price-slider::-moz-range-thumb {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: #3b82f6;
+          cursor: pointer;
+          border: 2px solid white;
+          box-shadow: 0 0 0 1px #3b82f6;
+      }
+      .custom-radio {
+          position: relative;
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          border: 2px solid #d1d5db;
+          border-radius: 50%;
+          transition: all 0.2s ease;
+      }
+      .custom-radio.checked {
+          border-color: #3b82f6;
+      }
+      .custom-radio.checked::after {
+          content: '';
+          position: absolute;
+          left: 3px;
+          top: 3px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #3b82f6;
+      }
+      .color-swatch {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: all 0.2s ease;
+      }
+      .color-swatch.selected {
+          transform: scale(1.2);
+          box-shadow: 0 0 0 2px white, 0 0 0 3px #3b82f6;
+      }
+      .view-toggle-btn.active {
+          color: #3b82f6;
+          background-color: #eff6ff;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="newarrival.html" class="text-3xl font-['Pacifico'] text-primary">
+            <img src="Images/fav_icon.png" alt="logo" class="w-10 h-10">
+            <span class="text-2xl font-bold">Style Haven</span>
+          </a>
+          <!-- Search Bar -->
+          <div class="relative w-full max-w-xl mx-4">
+            <input
+              type="text"
+              placeholder="Search for products..."
+              class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+            />
+            <div
+              class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-400"
+            >
+              <i class="ri-search-line"></i>
+            </div>
+          </div>
+          <!-- Navigation Icons -->
+          <div class="flex items-center space-x-6">
+            <a
+              href="#"
+              class="relative w-6 h-6 flex items-center justify-center text-gray-700 hover:text-primary"
+            >
+              <i class="ri-heart-line text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="relative w-6 h-6 flex items-center justify-center text-gray-700 hover:text-primary"
+            >
+              <i class="ri-user-line text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="relative w-6 h-6 flex items-center justify-center text-gray-700 hover:text-primary"
+            >
+              <i class="ri-shopping-cart-line text-xl"></i>
+              <span
+                class="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+                >3</span
+              >
+            </a>
+          </div>
+        </div>
+        <!-- Categories Menu -->
+        <nav
+          class="flex items-center justify-center py-3 border-t border-gray-100"
+        >
+          <ul class="flex space-x-8">
+            <li>
+              <a
+                href="women.html"
+                data-readdy="true"
+                class="text-sm font-medium text-primary"
+                >Women</a
+              >
+            </li>
+            <li>
+              <a
+                href="men.html"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >Men</a
+              >
+            </li>
+            <li>
+              <a
+                href="kids.html"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >Kids</a
+              >
+            </li>
+            <li>
+              <a
+                href="accessories.html"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >Accessories</a
+              >
+            </li>
+            <li>
+              <a
+                href="beauty.html"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >Beauty</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html"
+                data-readdy="true"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >Home</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="newarrival.html"
+                class="text-sm font-medium text-gray-700 hover:text-primary"
+                >New Arrivals</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b border-gray-200">
+      <div class="container mx-auto px-4 py-3">
+        <nav class="flex">
+          <ol class="flex items-center space-x-1 text-sm">
+            <li>
+              <a
+                href="index.html"
+                data-readdy="true"
+                class="text-gray-500 hover:text-primary"
+                >Home</a
+              >
+            </li>
+            <li>
+              <div class="flex items-center">
+                <span class="text-gray-400 mx-1">/</span>
+                <span class="text-primary font-medium">Women</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    
+
+    <!-- Most Sold Product -->
+    <section class="bg-gray-50 py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center text-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Women's Fashion</h2>
+          <p class="text-gray-600 max-w-2xl">
+            Discover our curated collection of women's clothing and accessories.
+            From elegant dresses to casual essentials, find pieces that reflect
+            your unique style and personality.
+          </p>
+        </div>
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+              <div class="relative h-96">
+                <img
+                  src="Images/floral_dress_on_woman_front_view.png"
+                  alt="Floral Summer Dress"
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute top-4 left-4 bg-primary text-white text-sm px-3 py-1 rounded-full">
+                  BESTSELLER
+                </div>
+              </div>
+              <div class="p-8 flex flex-col justify-center">
+                <div class="flex items-center text-yellow-400 mb-2">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <span class="text-gray-500 text-sm ml-2">(42 reviews)</span>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Floral Summer Dress</h3>
+                <p class="text-gray-600 mb-4">
+                  A beautiful floral summer dress perfect for warm days. Made from lightweight, breathable fabric with a flattering silhouette.
+                </p>
+                <div class="flex items-center justify-between mb-6">
+                  <span class="text-2xl font-bold text-primary">$59.99</span>
+                  <span class="text-sm text-gray-500">Over 1,000 sold</span>
+                </div>
+                <a
+                  href="floral.html"
+                  class="bg-primary text-white py-3 px-6 rounded-button font-medium hover:bg-primary/90 transition text-center"
+                >
+                  View Product
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-8 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <!-- Filters Sidebar -->
+          <div class="lg:w-1/4 bg-white rounded-lg shadow-sm p-6 h-fit">
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">
+                Categories
+              </h3>
+              <ul class="space-y-3">
+                <li class="flex items-center">
+                  <div
+                    class="custom-checkbox checked"
+                    data-category="all"
+                  ></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer"
+                    >All Women's Fashion</label
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div class="custom-checkbox" data-category="dresses"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer"
+                    >Dresses</label
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div class="custom-checkbox" data-category="tops"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer"
+                    >Tops & Blouses</label
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div class="custom-checkbox" data-category="bottoms"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer"
+                    >Pants & Skirts</label
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div class="custom-checkbox" data-category="outerwear"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer"
+                    >Jackets & Coats</label
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div class="custom-checkbox" data-category="activewear"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer"
+                    >Activewear</label
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div class="custom-checkbox" data-category="lingerie"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer"
+                    >Lingerie & Sleepwear</label
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div
+                    class="custom-checkbox"
+                    data-category="accessories"
+                  ></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer"
+                    >Accessories</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="border-t border-gray-200 pt-6 mb-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">
+                Price Range
+              </h3>
+              <div class="px-2">
+                <input
+                  type="range"
+                  min="0"
+                  max="500"
+                  value="250"
+                  class="price-slider mb-4"
+                  id="priceRange"
+                  aria-label="Price range slider"
+                  title="Adjust price range"
+                />
+                <div class="flex justify-between">
+                  <span class="text-sm text-gray-600">$0</span>
+                  <span
+                    class="text-sm text-gray-600 font-medium"
+                    id="priceValue"
+                    >$250</span
+                  >
+                  <span class="text-sm text-gray-600">$500</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-t border-gray-200 pt-6 mb-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">Size</h3>
+              <div class="grid grid-cols-2 gap-3">
+                <div class="flex items-center">
+                  <div class="custom-radio" data-size="xs"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer">XS</label>
+                </div>
+                <div class="flex items-center">
+                  <div class="custom-radio" data-size="s"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer">S</label>
+                </div>
+                <div class="flex items-center">
+                  <div class="custom-radio checked" data-size="m"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer">M</label>
+                </div>
+                <div class="flex items-center">
+                  <div class="custom-radio" data-size="l"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer">L</label>
+                </div>
+                <div class="flex items-center">
+                  <div class="custom-radio" data-size="xl"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer">XL</label>
+                </div>
+                <div class="flex items-center">
+                  <div class="custom-radio" data-size="xxl"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer">XXL</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-t border-gray-200 pt-6 mb-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">Color</h3>
+              <div class="flex flex-wrap gap-3">
+                <div
+                  class="color-swatch selected"
+                  style="background-color: #000000;"
+                  data-color="black"
+                ></div>
+                <div
+                  class="color-swatch"
+                  style="background-color: #ffffff; border: 1px solid #e5e7eb;"
+                  data-color="white"
+                ></div>
+                <div
+                  class="color-swatch"
+                  style="background-color: #ef4444;"
+                  data-color="red"
+                ></div>
+                <div
+                  class="color-swatch"
+                  style="background-color: #3b82f6;"
+                  data-color="blue"
+                ></div>
+                <div
+                  class="color-swatch"
+                  style="background-color: #10b981;"
+                  data-color="green"
+                ></div>
+                <div
+                  class="color-swatch"
+                  style="background-color: #f59e0b;"
+                  data-color="yellow"
+                ></div>
+                <div
+                  class="color-swatch"
+                  style="background-color: #8b5cf6;"
+                  data-color="purple"
+                ></div>
+                <div
+                  class="color-swatch"
+                  style="background-color: #ec4899;"
+                  data-color="pink"
+                ></div>
+              </div>
+            </div>
+
+            <div class="border-t border-gray-200 pt-6 mb-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">Brand</h3>
+              <ul class="space-y-3">
+                <li class="flex items-center">
+                  <div class="custom-checkbox checked" data-brand="all"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer"
+                    >All Brands</label
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div class="custom-checkbox" data-brand="zara"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer">Zara</label>
+                </li>
+                <li class="flex items-center">
+                  <div class="custom-checkbox" data-brand="hm"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer">H&M</label>
+                </li>
+                <li class="flex items-center">
+                  <div class="custom-checkbox" data-brand="mango"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer">Mango</label>
+                </li>
+                <li class="flex items-center">
+                  <div class="custom-checkbox" data-brand="uniqlo"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer"
+                    >Uniqlo</label
+                  >
+                </li>
+                <li class="flex items-center">
+                  <div class="custom-checkbox" data-brand="nike"></div>
+                  <label class="ml-3 text-gray-700 cursor-pointer">Nike</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <button
+                class="bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap hover:bg-blue-600 transition flex-1"
+              >
+                Apply Filters
+              </button>
+              <button
+                class="bg-white text-gray-700 px-4 py-2 rounded-button whitespace-nowrap border border-gray-300 hover:bg-gray-50 transition"
+              >
+                Clear
+              </button>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="lg:w-3/4">
+            <!-- Sort and View Options -->
+            <div
+              class="bg-white rounded-lg shadow-sm p-4 mb-6 flex flex-col sm:flex-row justify-between items-center"
+            >
+              <div class="flex items-center mb-4 sm:mb-0">
+                <span class="text-gray-600 mr-3">148 Products</span>
+                <div class="relative">
+                  <button
+                    class="flex items-center text-gray-700 bg-white border border-gray-300 rounded-button px-4 py-2 text-sm focus:outline-none"
+                  >
+                    <span>Sort by: Newest</span>
+                    <i class="ri-arrow-down-s-line ml-2"></i>
+                  </button>
+                  <div
+                    class="absolute z-10 hidden mt-1 w-48 bg-white rounded-lg shadow-lg py-1 border border-gray-200"
+                  >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Newest</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Price: Low to High</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Price: High to Low</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Best Selling</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Customer Rating</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div class="flex border border-gray-300 rounded-full p-1">
+                  <button
+                    class="view-toggle-btn active w-8 h-8 flex items-center justify-center rounded-full"
+                    data-view="grid"
+                    title="Grid view"
+                    aria-label="Switch to grid view"
+                  >
+                    <i class="ri-grid-line"></i>
+                  </button>
+                  <button
+                    class="view-toggle-btn w-8 h-8 flex items-center justify-center rounded-full"
+                    data-view="list"
+                    title="List view"
+                    aria-label="Switch to list view"
+                  >
+                    <i class="ri-list-check"></i>
+                  </button>
+                </div>
+                <div class="relative">
+                  <button
+                    class="flex items-center text-gray-700 bg-white border border-gray-300 rounded-button px-3 py-2 text-sm focus:outline-none"
+                  >
+                    <span>Show: 24</span>
+                    <i class="ri-arrow-down-s-line ml-2"></i>
+                  </button>
+                  <div
+                    class="absolute z-10 hidden mt-1 w-24 bg-white rounded-lg shadow-lg py-1 border border-gray-200 right-0"
+                  >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >12</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >24</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >36</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >48</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            >
+              <!-- Product 1 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=elegant%2520womens%2520white%2520summer%2520dress%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=101&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div class="absolute top-3 left-3">
+                    <span
+                      class="bg-primary text-white text-xs font-semibold px-2 py-1 rounded"
+                      >New</span
+                    >
+                  </div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(42)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    Linen Summer Dress
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$89.99</span>
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=elegant%2520womens%2520black%2520blouse%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=102&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div class="absolute top-3 left-3">
+                    <span
+                      class="bg-secondary text-white text-xs font-semibold px-2 py-1 rounded"
+                      >-15%</span
+                    >
+                  </div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-line"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(28)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    Silk Button-Up Blouse
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$59.99</span>
+                      <span class="text-sm text-gray-500 line-through ml-2"
+                        >$69.99</span
+                      >
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=stylish%2520womens%2520blue%2520jeans%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=103&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-primary hover:bg-gray-100 transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-fill"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(56)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    High-Waisted Skinny Jeans
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$79.99</span>
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 4 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=elegant%2520womens%2520red%2520evening%2520dress%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=104&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div class="absolute top-3 left-3">
+                    <span
+                      class="bg-green-500 text-white text-xs font-semibold px-2 py-1 rounded"
+                      >Bestseller</span
+                    >
+                  </div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(37)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    Evening Cocktail Dress
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$129.99</span>
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 5 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=stylish%2520womens%2520leather%2520jacket%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=105&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-line"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(23)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    Faux Leather Biker Jacket
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$149.99</span>
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 6 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=elegant%2520womens%2520cashmere%2520sweater%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=106&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div class="absolute top-3 left-3">
+                    <span
+                      class="bg-secondary text-white text-xs font-semibold px-2 py-1 rounded"
+                      >-20%</span
+                    >
+                  </div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(31)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    Cashmere V-Neck Sweater
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$119.99</span>
+                      <span class="text-sm text-gray-500 line-through ml-2"
+                        >$149.99</span
+                      >
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 7 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=stylish%2520womens%2520pleated%2520skirt%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=107&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-line"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(19)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    Pleated Midi Skirt
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$69.99</span>
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 8 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=elegant%2520womens%2520silk%2520scarf%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=108&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div class="absolute top-3 left-3">
+                    <span
+                      class="bg-primary text-white text-xs font-semibold px-2 py-1 rounded"
+                      >New</span
+                    >
+                  </div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-primary hover:bg-gray-100 transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-fill"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(27)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    Printed Silk Scarf
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$49.99</span>
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 9 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=stylish%2520womens%2520yoga%2520pants%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=109&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-line"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(34)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    High-Waisted Yoga Leggings
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$59.99</span>
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 10 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=elegant%2520womens%2520blazer%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=110&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div class="absolute top-3 left-3">
+                    <span
+                      class="bg-green-500 text-white text-xs font-semibold px-2 py-1 rounded"
+                      >Bestseller</span
+                    >
+                  </div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(48)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    Tailored Blazer
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$139.99</span>
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 11 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=stylish%2520womens%2520summer%2520hat%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=111&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-400 hover:text-primary transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-line"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-line"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(15)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    Wide Brim Straw Hat
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$39.99</span>
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 12 -->
+              <div
+                class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <div
+                    class="product-image w-full h-full object-cover object-top"
+                    style="background-image: url('https://readdy.ai/api/search-image?query=elegant%2520womens%2520sandals%2520on%2520a%2520minimalist%2520light%2520background%252C%2520high-end%2520fashion%2520photography%252C%2520professional%2520lighting%252C%2520soft%2520shadows%252C%2520commercial%2520quality%252C%2520fashion%2520catalog%2520style%252C%2520isolated%2520product&width=500&height=600&seq=112&orientation=portrait'); background-size: cover; background-position: center;"
+                  ></div>
+                  <div class="absolute top-3 left-3">
+                    <span
+                      class="bg-secondary text-white text-xs font-semibold px-2 py-1 rounded"
+                      >-25%</span
+                    >
+                  </div>
+                  <div
+                    class="quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center"
+                  >
+                    <button
+                      class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium text-sm !rounded-button whitespace-nowrap hover:bg-gray-100 transition"
+                    >
+                      Quick View
+                    </button>
+                  </div>
+                  <button
+                    class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white text-primary hover:bg-gray-100 transition"
+                    title="Add to wishlist"
+                    aria-label="Add to wishlist"
+                  >
+                    <i class="ri-heart-fill"></i>
+                  </button>
+                </div>
+                <div class="p-4">
+                  <div class="flex items-center mb-1">
+                    <div class="rating-stars flex">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 ml-1">(29)</span>
+                  </div>
+                  <h3 class="font-medium text-gray-800 mb-1">
+                    Leather Strappy Sandals
+                  </h3>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-semibold text-gray-900">$74.99</span>
+                      <span class="text-sm text-gray-500 line-through ml-2"
+                        >$99.99</span
+                      >
+                    </div>
+                    <button
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white hover:bg-blue-600 transition !rounded-button"
+                      title="Add to cart"
+                      aria-label="Add to cart"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-10">
+              <nav class="flex items-center">
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 mr-2 hover:bg-primary hover:text-white hover:border-primary transition"
+                >
+                  <i class="ri-arrow-left-s-line"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white border border-primary mr-2"
+                  >1</a
+                >
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 mr-2 hover:bg-primary hover:text-white hover:border-primary transition"
+                  >2</a
+                >
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 mr-2 hover:bg-primary hover:text-white hover:border-primary transition"
+                  >3</a
+                >
+                <span class="mx-2 text-gray-500">...</span>
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 mr-2 hover:bg-primary hover:text-white hover:border-primary transition"
+                  >8</a
+                >
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:bg-primary hover:text-white hover:border-primary transition"
+                >
+                  <i class="ri-arrow-right-s-line"></i>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <a href="newarrival.html" class="text-3xl font-['Pacifico'] text-primary">
+              <img src="Images/fav_icon.png" alt="logo" class="w-10 h-10">
+              <span class="text-2xl font-bold">Style Haven</span>
+            </a>
+            <p class="text-gray-400 mb-6">
+              Your destination for premium fashion and beauty products. We
+              curate the best in clothing, accessories, and beauty essentials.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"
+              >
+                <i class="ri-pinterest-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">Shop</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="women.html" class="text-gray-400 hover:text-white transition"
+                  >Women</a
+                >
+              </li>
+              <li>
+                <a href="men.html" class="text-gray-400 hover:text-white transition"
+                  >Men</a
+                >
+              </li>
+              <li>
+                <a href="kids.html" class="text-gray-400 hover:text-white transition"
+                  >Kids</a
+                >
+              </li>
+              <li>
+                <a
+                  href="beauty.html"
+                  data-readdy="true"
+                  class="text-gray-400 hover:text-white transition"
+                  >Beauty</a
+                >
+              </li>
+              
+              
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">About</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Our Story</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Press</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Sustainability</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Affiliates</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-6">Customer Service</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Shipping & Returns</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Track Order</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2025 Fashion Store. All rights reserved.
+          </p>
+          <div class="flex items-center space-x-4">
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-visa-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-mastercard-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-paypal-fill ri-lg"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-apple-fill ri-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="backToTopScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const backToTopButton = document.getElementById("backToTop");
+        window.addEventListener("scroll", function () {
+          if (window.pageYOffset > 300) {
+            backToTopButton.classList.remove("opacity-0", "invisible");
+            backToTopButton.classList.add("opacity-100", "visible");
+          } else {
+            backToTopButton.classList.remove("opacity-100", "visible");
+            backToTopButton.classList.add("opacity-0", "invisible");
+          }
+        });
+        backToTopButton.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+
+    <script id="filterScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        // Category checkboxes
+        const categoryCheckboxes = document.querySelectorAll("[data-category]");
+        categoryCheckboxes.forEach((checkbox) => {
+          checkbox.addEventListener("click", function () {
+            if (this.classList.contains("checked")) {
+              if (this.dataset.category !== "all") {
+                this.classList.remove("checked");
+              }
+            } else {
+              if (this.dataset.category === "all") {
+                categoryCheckboxes.forEach((cb) => {
+                  if (cb.dataset.category !== "all") {
+                    cb.classList.remove("checked");
+                  }
+                });
+              } else {
+                const allCategoryCheckbox = document.querySelector(
+                  '[data-category="all"]',
+                );
+                allCategoryCheckbox.classList.remove("checked");
+              }
+              this.classList.add("checked");
+            }
+          });
+        });
+
+        // Size radio buttons
+        const sizeRadios = document.querySelectorAll("[data-size]");
+        sizeRadios.forEach((radio) => {
+          radio.addEventListener("click", function () {
+            sizeRadios.forEach((r) => r.classList.remove("checked"));
+            this.classList.add("checked");
+          });
+        });
+
+        // Color swatches
+        const colorSwatches = document.querySelectorAll(".color-swatch");
+        colorSwatches.forEach((swatch) => {
+          swatch.addEventListener("click", function () {
+            this.classList.toggle("selected");
+          });
+        });
+
+        // Price range slider
+        const priceSlider = document.getElementById("priceRange");
+        const priceValue = document.getElementById("priceValue");
+        priceSlider.addEventListener("input", function () {
+          priceValue.textContent = `$${this.value}`;
+        });
+
+        // Brand checkboxes
+        const brandCheckboxes = document.querySelectorAll("[data-brand]");
+        brandCheckboxes.forEach((checkbox) => {
+          checkbox.addEventListener("click", function () {
+            if (this.classList.contains("checked")) {
+              if (this.dataset.brand !== "all") {
+                this.classList.remove("checked");
+              }
+            } else {
+              if (this.dataset.brand === "all") {
+                brandCheckboxes.forEach((cb) => {
+                  if (cb.dataset.brand !== "all") {
+                    cb.classList.remove("checked");
+                  }
+                });
+              } else {
+                const allBrandCheckbox = document.querySelector('[data-brand="all"]');
+                allBrandCheckbox.classList.remove("checked");
+              }
+              this.classList.add("checked");
+            }
+          });
+        });
+
+        // View toggle buttons
+        const viewToggleButtons = document.querySelectorAll(".view-toggle-btn");
+        viewToggleButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            viewToggleButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+
+        // Wishlist buttons
+        const wishlistButtons = document.querySelectorAll(
+          ".product-card button i.ri-heart-line, .product-card button i.ri-heart-fill",
+        );
+        wishlistButtons.forEach((button) => {
+          button.parentElement.addEventListener("click", function () {
+            if (button.classList.contains("ri-heart-line")) {
+              button.classList.remove("ri-heart-line");
+              button.classList.add("ri-heart-fill");
+              button.parentElement.classList.add("text-primary");
+            } else {
+              button.classList.remove("ri-heart-fill");
+              button.classList.add("ri-heart-line");
+              button.parentElement.classList.remove("text-primary");
+            }
+          });
+        });
+
+        // Sort dropdown
+        const sortButton = document.querySelector(".relative button");
+        const sortDropdown = document.querySelector(".relative button + div");
+        if (sortButton && sortDropdown) {
+          sortButton.addEventListener("click", function () {
+            sortDropdown.classList.toggle("hidden");
+          });
+
+          document.addEventListener("click", function (event) {
+            if (
+              !sortButton.contains(event.target) &&
+              !sortDropdown.contains(event.target)
+            ) {
+              sortDropdown.classList.add("hidden");
+            }
+          });
+        }
+
+        // Show items dropdown
+        const showButton = document.querySelector(".relative button:nth-of-type(2)");
+        const showDropdown = document.querySelector(
+          ".relative button:nth-of-type(2) + div",
+        );
+        if (showButton && showDropdown) {
+          showButton.addEventListener("click", function () {
+            showDropdown.classList.toggle("hidden");
+          });
+
+          document.addEventListener("click", function (event) {
+            if (
+              !showButton.contains(event.target) &&
+              !showDropdown.contains(event.target)
+            ) {
+              showDropdown.classList.add("hidden");
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
